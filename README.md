@@ -3,6 +3,8 @@
 ## refs
 
 - https://learn.microsoft.com/ja-jp/training/modules/choose-azure-service-to-integrate-and-automate-business-processes/2-identify-technology-options
+- https://learn.microsoft.com/ja-jp/training/modules/create-serverless-logic-with-azure-functions/2-decide-if-serverless-computing-is-right-for-your-business-need
+- https://learn.microsoft.com/ja-jp/training/modules/create-serverless-logic-with-azure-functions/3-create-an-azure-functions-app-in-the-azure-portal?pivots=javascript
 
 ## ワークフロー
 
@@ -45,6 +47,12 @@
     - TimerTrigger: スケジュールでコードを実行
     - BlobTrigger: Azure ストレージアカウントに新しい BLOB が追加されたら実行
     - CosmosDBTrigger: NoSQL データベースで新規、更新されたら実行
+  - 規定で 5 分のタイムアウト。最大 10 分に設定できる。10 分以上は VM 上にホストすることで可能。ただし、HTTP リクエストでトリガーされた場合に値をレスポンスに含める場合はタイムアウトは 2.5 分。Durable Functions オプションを使用するとタイムアウトなし （ **Dedicated(App Service) プラン?** ）。
+  - 10 秒ごとにインスタンスを 1 つ作成でき 200 まで作成できる。
+  - 動的スケーリングは **Premium プラン** 。
+  - **ストレージアカウントが必要** 。従量課金プランでは、コードなどが格納される。〓他のプランでは？〓
+  - `function.json` でバインドする。
+  - API キーは `x-functions-key` などで渡して実行
  
 **デザイン優先テクノロジの比較**
 
