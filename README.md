@@ -5,6 +5,7 @@
 - https://learn.microsoft.com/ja-jp/training/modules/choose-azure-service-to-integrate-and-automate-business-processes/2-identify-technology-options
 - https://learn.microsoft.com/ja-jp/training/modules/create-serverless-logic-with-azure-functions/2-decide-if-serverless-computing-is-right-for-your-business-need
 - https://learn.microsoft.com/ja-jp/training/modules/create-serverless-logic-with-azure-functions/3-create-an-azure-functions-app-in-the-azure-portal?pivots=javascript
+- https://learn.microsoft.com/ja-jp/training/modules/execute-azure-function-with-triggers/2-determine-best-trigger
 
 ## ワークフロー
 
@@ -53,6 +54,16 @@
   - **ストレージアカウントが必要** 。従量課金プランでは、コードなどが格納される。〓他のプランでは？〓
   - `function.json` でバインドする。
   - API キーは `x-functions-key` などで渡して実行
+  - トリガー
+    - タイマー
+      - CRON 式 
+    - HTTP
+    - BLOB
+    - キュー
+    - Azure Cosmos DB
+    - Azure SQL
+    - イベントハブ
+    - Event Grid 
  
 **デザイン優先テクノロジの比較**
 
