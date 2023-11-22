@@ -63,7 +63,25 @@
     - Azure Cosmos DB
     - Azure SQL
     - イベントハブ
-    - Event Grid 
+    - Event Grid
+  - バインディング
+    - 入力バインディング: データソースに接続
+    - 出力バインディング: データの送信先に接続
+    - プロパティ
+      - 名前
+      - 種類: データまたはサービスの種類
+      - 方向
+    - ```
+      ...
+      {
+        "name": "headshotBlob",
+        "type": "blob",
+        "path": "thumbnail-images/{filename}",
+        "connection": "HeadshotStorageConnection",
+        "direction": "in"
+      },
+      ...
+      ```
  
 **デザイン優先テクノロジの比較**
 
