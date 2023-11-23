@@ -6,6 +6,7 @@
 - https://learn.microsoft.com/ja-jp/training/modules/create-serverless-logic-with-azure-functions/2-decide-if-serverless-computing-is-right-for-your-business-need
 - https://learn.microsoft.com/ja-jp/training/modules/create-serverless-logic-with-azure-functions/3-create-an-azure-functions-app-in-the-azure-portal?pivots=javascript
 - https://learn.microsoft.com/ja-jp/training/modules/execute-azure-function-with-triggers/2-determine-best-trigger
+- https://learn.microsoft.com/ja-jp/training/modules/create-long-running-serverless-workflow-with-durable-functions/2-what-is-durable-functions
 
 ## ワークフロー
 
@@ -82,6 +83,8 @@
       },
       ...
       ```
+- Azure Functions はステートレス環境で動作。Durable Functions は複数の関数呼び出しにまたがって状態を保持可能。
+- Durable Functions は クライアント、オーケストレーター、アクティビティ 
  
 **デザイン優先テクノロジの比較**
 
